@@ -1,0 +1,17 @@
+❤ An array is a group of similar elements or data items of the same type collected at contiguous memory locations.  
+💎 It provides fast access to elements using indices, allowing efficient retrieval, insertion, and deletion operations. Arrays are versatile, supporting various algorithms and widely used for managing collections of data in programming. Each element is accessed using an index, with the first element typically having an index of 0.  
+  
+# Creating an array of integers  
+my_array = [1, 2, 3, 4, 5]  
+  
+# Accessing elements  
+print(my_array[0])  # Output: 1  
+print(my_array[2])  # Output: 3  
+  
+# Modifying elements  
+my_array[1] = 10  
+print(my_array)  # Output: [1, 10, 3, 4, 5]  
+  
+# Length of the array  
+length = len(my_array)  
+print(length)  # Output: 5  
