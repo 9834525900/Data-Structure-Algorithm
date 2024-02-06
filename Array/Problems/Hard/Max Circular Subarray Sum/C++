@@ -18,7 +18,7 @@ int circularSubarraySum(int a[], int n){
             min_sum= min(min_sum, curr_min);
         }
         
-        if(min_sum=sum){
+        if(min_sum==sum){
             return max_sum;
         }
         
