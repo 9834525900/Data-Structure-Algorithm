@@ -1,0 +1,40 @@
+class Solution{
+  public:
+    //Function to merge K sorted linked list.
+    Node * mergeKLists(Node *arr[], int K)
+    {
+           // Your code here
+           Node* head=NULL;
+           while(1){
+               int min=INT_MAX;
+               int a=0;
+               int z;
+               Node* curr;
+               for(int i=0; i<K; i++){
+                   if(arr[i]!=NULL){
+                       a++;
+                       if(arr[i]->data<min){
+                           min=arr[i]->data;
+                           z=i;
+                       }
+                   }
+               }
+               
+               if(a!=0){
+                   arr[z]=arr[z]->next;
+                   Node* temp= new Node(min);
+                   if(head==NULL){
+                       head=temp;
+                       curr=temp;
+                   }
+                   else{
+                       curr->next=temp;
+                       curr=temp;
+                   }
+               }
+               else{
+                   return head;
+               }
+           }
+    }
+};
